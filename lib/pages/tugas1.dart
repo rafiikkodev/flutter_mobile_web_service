@@ -19,7 +19,7 @@ class _TugasSatuState extends State<TugasSatu> {
         appBar: AppBar(
           title: const Text(
             "Implementasi Center dengan Container",
-            style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+            style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
           ),
         ),
         body: Center(
@@ -64,11 +64,9 @@ class _TugasSatuState extends State<TugasSatu> {
               const SizedBox(height: 10),
               Container(
                 padding: const EdgeInsets.all(15),
-                decoration: const BoxDecoration(
-                  color: Colors.pinkAccent,
-                ),
+                decoration: const BoxDecoration(color: Color(0xffe90bd6)),
                 child: const Text(
-                  "Prodi : Informatika",
+                  "Prodi : Informatika Sarjana",
                   style: TextStyle(
                     fontSize: 16,
                     color: Colors.white,
