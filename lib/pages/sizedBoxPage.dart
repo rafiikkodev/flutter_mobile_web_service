@@ -25,7 +25,7 @@ class _SizedBoxPageState extends State<SizedBoxPage> {
               const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("This text end"),
+                  Text("This text and "),
                   Text("the next text have no distance")
                 ],
               ),
@@ -35,7 +35,7 @@ class _SizedBoxPageState extends State<SizedBoxPage> {
               const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("this text end"),
+                  Text("this text and"),
                   SizedBox(
                     width: 24,
                   ),
@@ -52,6 +52,27 @@ class _SizedBoxPageState extends State<SizedBoxPage> {
                     width: 50,
                     height: 50,
                     color: Colors.indigo,
+                  ),
+                  Container(
+                    width: 50,
+                    height: 50,
+                    color: Colors.pink,
+                  )
+                ],
+              ),
+              const SizedBox(
+                height: 16,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 50,
+                    height: 50,
+                    color: Colors.indigo,
+                  ),
+                  const SizedBox(
+                    width: 24,
                   ),
                   Container(
                     width: 50,

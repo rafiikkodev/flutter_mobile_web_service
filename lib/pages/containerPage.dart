@@ -16,11 +16,9 @@ class _ContainerPageState extends State<ContainerPage> {
       home: Scaffold(
         appBar: AppBar(
           title: const Text(
-            "Center",
+            "Expanded",
             style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
           ),
-          centerTitle: true,
-          backgroundColor: Colors.teal.shade200,
         ),
         body: SafeArea(
           child: Center(
