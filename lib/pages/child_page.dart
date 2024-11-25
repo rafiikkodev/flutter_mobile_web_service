@@ -23,6 +23,12 @@ class _ChildPageState extends State<ChildPage> {
               "Center",
               style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
             ),
+            leading: IconButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              icon: const Icon(Icons.arrow_back),
+            ),
             centerTitle: true,
             backgroundColor: Colors.teal.shade200),
         body: SafeArea(

@@ -17,6 +17,12 @@ class _TextPageState extends State<TextPage> {
           "Text",
           style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
         ),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: const Icon(Icons.arrow_back),
+        ),
       ),
       body: const SafeArea(
           child: Center(

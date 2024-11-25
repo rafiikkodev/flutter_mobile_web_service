@@ -16,6 +16,12 @@ class _SizedBoxPageState extends State<SizedBoxPage> {
           "SizedBox",
           style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
         ),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: const Icon(Icons.arrow_back),
+        ),
       ),
       body: SafeArea(
         child: Center(

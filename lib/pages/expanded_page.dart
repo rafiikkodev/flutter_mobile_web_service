@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Expandedpage extends StatefulWidget {
-  const Expandedpage({super.key});
+class ExpandedPage extends StatefulWidget {
+  const ExpandedPage({super.key});
 
   @override
-  State<Expandedpage> createState() => _ExpandedpageState();
+  State<ExpandedPage> createState() => _ExpandedPageState();
 }
 
-class _ExpandedpageState extends State<Expandedpage> {
+class _ExpandedPageState extends State<ExpandedPage> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -16,6 +16,12 @@ class _ExpandedpageState extends State<Expandedpage> {
         title: const Text(
           "Expanded",
           style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+        ),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: const Icon(Icons.arrow_back),
         ),
       ),
       body: SafeArea(

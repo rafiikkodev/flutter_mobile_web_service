@@ -1,52 +1,58 @@
 import 'package:flutter/material.dart';
 
-class ColumnPage extends StatefulWidget {
-  const ColumnPage({super.key});
+class RowPage extends StatefulWidget {
+  const RowPage({super.key});
 
   @override
-  State<ColumnPage> createState() => _ColumnPageState();
+  State<RowPage> createState() => _RowPageState();
 }
 
-class _ColumnPageState extends State<ColumnPage> {
+class _RowPageState extends State<RowPage> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
           title: const Text(
-            "Column",
+            "Row",
             style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+          ),
+          leading: IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: const Icon(Icons.arrow_back),
           ),
         ),
         body: SafeArea(
-            child: Center(
-          child: Column(
+          child: Center(
+              child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
-                width: 100,
-                height: 100,
+                width: 50,
+                height: 50,
                 color: Colors.indigo,
               ),
               const SizedBox(
-                height: 16,
+                width: 16,
               ),
               Container(
-                width: 100,
-                height: 100,
+                width: 50,
+                height: 50,
                 color: Colors.blue,
               ),
               const SizedBox(
-                height: 16,
+                width: 16,
               ),
               Container(
-                width: 100,
-                height: 100,
+                width: 50,
+                height: 50,
                 color: Colors.green,
-              ),
+              )
             ],
-          ),
-        )),
+          )),
+        ),
       ),
     );
   }
